@@ -12,6 +12,7 @@
 //!
 //! GUI clients consume this through the C ABI in [`ffi`] / `include/msdevbox.h`.
 
+pub mod auth;
 pub mod error;
 pub mod tokenstore;
 
