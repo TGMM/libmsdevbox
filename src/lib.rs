@@ -15,6 +15,7 @@
 pub mod auth;
 pub mod discovery;
 pub mod error;
+pub mod ffi;
 pub mod rdpfile;
 pub mod tokenstore;
 
