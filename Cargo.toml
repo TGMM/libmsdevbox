@@ -11,6 +11,10 @@ repository = "https://github.com/TGMM/libmsdevbox"
 name = "msdevbox"
 crate-type = ["cdylib", "staticlib", "rlib"]
 
+[[bin]]
+name = "msdevbox"
+path = "src/bin/msdevbox.rs"
+
 [dependencies]
 reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
 serde = { version = "1", features = ["derive"] }
