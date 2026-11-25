@@ -2,6 +2,9 @@
 # library. Installed by scripts/install.sh; consumed with:
 #     find_package(MsDevBox 0.1 REQUIRED CONFIG)
 #     target_link_libraries(myclient PRIVATE MsDevBox::MsDevBox)
+# The version check lives in MsDevBoxConfigVersion.cmake.
+
+set(PACKAGE_VERSION "0.1.0")
 
 find_library(MSDEVBOX_LIBRARY NAMES msdevbox REQUIRED)
 find_path(MSDEVBOX_INCLUDE_DIR msdevbox.h REQUIRED)

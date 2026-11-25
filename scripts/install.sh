@@ -24,6 +24,7 @@ $INSTALL -m 644 target/release/libmsdevbox.so "$LIBDIR/libmsdevbox.so.$(cargo pk
 [ -f target/release/libmsdevbox.a ] && $INSTALL -m 644 target/release/libmsdevbox.a "$LIBDIR/"
 $INSTALL -m 644 include/msdevbox.h "$PREFIX/include/"
 $INSTALL -m 644 cmake/MsDevBoxConfig.cmake "$LIBDIR/cmake/MsDevBox/"
+$INSTALL -m 644 cmake/MsDevBoxConfigVersion.cmake "$LIBDIR/cmake/MsDevBox/"
 
 echo "installed to $PREFIX"
 echo "build the CLI tool too? it is at target/release/msdevbox"
