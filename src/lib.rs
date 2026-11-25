@@ -15,6 +15,7 @@
 pub mod auth;
 pub mod discovery;
 pub mod error;
+pub mod rdpfile;
 pub mod tokenstore;
 
 /// OAuth client identity the tenant allows from unmanaged Linux endpoints.
