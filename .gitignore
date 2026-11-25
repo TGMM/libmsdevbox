@@ -1,0 +1,6 @@
+build/
+build-*/
+.clang-format
+*.so
+*.o
+__pycache__/
