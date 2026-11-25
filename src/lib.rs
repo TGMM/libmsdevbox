@@ -46,4 +46,5 @@ pub const ENDUSER_CLIENT_VERSION: &str = "2.0.1601.0";
 pub const PARTNER_DEVBOX: &str = "e3171dd9-9a5f-e5be-b36c-cc7c4f3f3bcf";
 pub const PARTNER_DEVBOX_V2: &str = "10099236-61c3-44e0-b9a8-c1036643ae26";
 
-const USER_AGENT: &str = concat!("msdevbox/", env!("CARGO_PKG_VERSION"));
+/// User agent this library identifies itself with on its own requests.
+pub const APP_USER_AGENT: &str = concat!("msdevbox/", env!("CARGO_PKG_VERSION"));

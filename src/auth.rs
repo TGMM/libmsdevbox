@@ -59,7 +59,7 @@ fn now_ms() -> u64 {
 fn http_client() -> reqwest::blocking::Client {
     // A per-call client is fine: these are single, short round trips.
     reqwest::blocking::Client::builder()
-        .user_agent(concat!("msdevbox/", env!("CARGO_PKG_VERSION")))
+        .user_agent(crate::APP_USER_AGENT)
         .timeout(std::time::Duration::from_secs(60))
         .build()
         .expect("reqwest client")

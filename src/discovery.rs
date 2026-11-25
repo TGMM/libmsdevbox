@@ -27,7 +27,7 @@ pub struct DevBoxInfo {
 
 fn http_client() -> reqwest::blocking::Client {
     reqwest::blocking::Client::builder()
-        .user_agent(concat!("msdevbox/", env!("CARGO_PKG_VERSION")))
+        .user_agent(crate::APP_USER_AGENT)
         .timeout(Duration::from_secs(30))
         .build()
         .expect("reqwest client")
